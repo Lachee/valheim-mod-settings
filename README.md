@@ -1,4 +1,4 @@
-# Mod Config
+# Mod Settings
 
 Adds a **Mods** tab to Valheim's own Settings window. It lists every installed mod's BepInEx config settings in one scrolling page. Like [BepInEx.ConfigurationManager](https://github.com/BepInEx/BepInEx.ConfigurationManager), but built from the game's native UI: the same checkboxes, sliders, dropdowns, buttons, scrollbar and tooltips the vanilla settings tabs use.
 
@@ -24,7 +24,7 @@ ConfigurationManager's IMGUI `CustomDrawer`s can't run in uGUI. Settings that us
 
 ## Configuration
 
-`BepInEx/config/lachee.modconfig.cfg` (or edit these from the Mods tab itself):
+`BepInEx/config/lachee.modsettings.cfg` (or edit these from the Mods tab itself):
 
 | Setting | Default | Description |
 | --- | --- | --- |

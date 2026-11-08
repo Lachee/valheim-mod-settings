@@ -10,7 +10,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Valheim.SettingsGui;
 
-namespace ModConfig
+namespace ModSettings
 {
     /// <summary>
     /// The "Mods" settings page. Lists every plugin's config entries in one scrolling list.

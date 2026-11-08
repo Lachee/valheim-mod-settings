@@ -4,7 +4,7 @@ using System.Linq;
 using BepInEx.Configuration;
 using UnityEngine;
 
-namespace ModConfig
+namespace ModSettings
 {
     internal static class ValueUtil
     {

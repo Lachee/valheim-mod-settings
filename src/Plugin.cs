@@ -4,13 +4,13 @@ using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
 
-namespace ModConfig
+namespace ModSettings
 {
     [BepInPlugin(Guid, Name, Version)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string Guid = "lachee.modconfig";
-        public const string Name = "Mod Config";
+        public const string Guid = "lachee.modsettings";
+        public const string Name = "Mod Settings";
         public const string Version = "1.0.0";
 
         internal static ManualLogSource Log;

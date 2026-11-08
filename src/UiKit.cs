@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Valheim.SettingsGui;
 
-namespace ModConfig
+namespace ModSettings
 {
     /// <summary>
     /// Builds widgets by cloning the controls Valheim's own settings pages use, so everything matches the

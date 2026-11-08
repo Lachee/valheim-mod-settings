@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace ModConfig
+namespace ModSettings
 {
     /// <summary>
     /// Adds a "Mods" tab button and an (initially empty) page to a freshly instantiated settings window.

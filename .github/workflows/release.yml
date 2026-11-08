@@ -81,7 +81,7 @@ jobs:
 
       - name: Build
         run: |
-          dotnet build ModConfig.csproj -c Release \
+          dotnet build ModSettings.csproj -c Release \
             -p:ValheimDir="$HOME/VHINSTALL" \
             -p:DeployToGame=false \
             -p:Version=${{ steps.version.outputs.version }}
@@ -90,9 +90,9 @@ jobs:
         id: bundle
         run: |
           VERSION=${{ steps.version.outputs.version }}
-          ZIP="ModConfig-${VERSION}.zip"
+          ZIP="ModSettings-${VERSION}.zip"
           mkdir -p dist/package
-          cp bin/Release/ModConfig.dll dist/package/
+          cp bin/Release/ModSettings.dll dist/package/
           cp README.md dist/package/
           sed "s/__VERSION__/${VERSION}/" thunderstore/manifest.json > dist/package/manifest.json
           if [ -f thunderstore/icon.png ]; then cp thunderstore/icon.png dist/package/; fi
@@ -104,14 +104,14 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.version.outputs.tag }}
-          name: Mod Config ${{ steps.version.outputs.version }}
+          name: Mod Settings ${{ steps.version.outputs.version }}
           generate_release_notes: true
           files: ${{ steps.bundle.outputs.zip }}
           body: |
             ## Installation
 
             1. Install [BepInExPack Valheim](https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/) if you don't already have it.
-            2. Copy `ModConfig.dll` from the zip into `Valheim/BepInEx/plugins/`, or install the zip with your mod manager's "install from file" option.
+            2. Copy `ModSettings.dll` from the zip into `Valheim/BepInEx/plugins/`, or install the zip with your mod manager's "install from file" option.
             3. Open **Settings** (main menu or the Esc menu) and pick the **Mods** tab.
 
             The mod only changes your own game's UI, so you don't need it on the server.

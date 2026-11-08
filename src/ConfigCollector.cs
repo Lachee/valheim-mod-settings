@@ -7,7 +7,7 @@ using BepInEx.Bootstrap;
 using BepInEx.Configuration;
 using HarmonyLib;
 
-namespace ModConfig
+namespace ModSettings
 {
     /// <summary>One mod (or BepInEx itself) and the settings it exposes.</summary>
     internal sealed class PluginConfigInfo
