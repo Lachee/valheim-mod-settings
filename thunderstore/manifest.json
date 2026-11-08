@@ -1,0 +1,9 @@
+{
+  "name": "ModConfig",
+  "version_number": "__VERSION__",
+  "website_url": "https://github.com/Lachee/valheim-modconfig",
+  "description": "Edit every mod's BepInEx config from a new Mods tab in Valheim's own Settings window, built entirely from the game's native UI controls.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2360"
+  ]
+}
