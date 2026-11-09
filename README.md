@@ -1,5 +1,7 @@
 # Mod Settings
 
+![banner](https://github.com/Lachee/valheim-mod-settings/blob/main/images/nexus-banner.webp?raw=true)
+
 Adds a **Mods** tab to Valheim's own Settings window. It lists every installed mod's BepInEx config settings in one scrolling page. Like [BepInEx.ConfigurationManager](https://github.com/BepInEx/BepInEx.ConfigurationManager), but built from the game's native UI: the same checkboxes, sliders, dropdowns, buttons, scrollbar and tooltips the vanilla settings tabs use.
 
 ## Features
